@@ -33,6 +33,12 @@ header {
   align-items: center;
 }
 
+@media (max-width: 800px) {
+  .logo {
+    width: 400px;
+  }
+}
+
 .bgi {
   height: 100vh;
 }
@@ -80,9 +86,16 @@ header {
 }
 
 .paragraph {
+  padding: calc(var(--space) * 8);
   font-size: 40px;
   max-width: 960px;
   margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  .paragraph {
+    font-size: 30px;
+  }
 }
 
 section {
@@ -97,9 +110,16 @@ section {
 .client-grid {
   display: grid;
   max-width: 90vw;
+  justify-content: center;
   margin: 0 auto;
-  grid-template-columns: 40% 55%;
+  grid-template-columns: 40% 40%;
   grid-gap: calc(var(--space) * 16);
+}
+
+@media (max-width: 800px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .client {
