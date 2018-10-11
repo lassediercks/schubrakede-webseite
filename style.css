@@ -1,8 +1,8 @@
 :root {
   --space: 4px;
   --border-radius: 3px;
-  --bold: 500;
-
+  --regular: 300;
+  --bold: 400;
   --heavy: 700;
 }
 
@@ -17,7 +17,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Avenir Next";
+  font-family: "Lato", sans-serif;
 }
 
 header {
@@ -29,7 +29,10 @@ header {
   justify-content: center;
   width: 100%;
   color: white;
-  background-image: linear-gradient(rgba(7, 10, 19, 0) 50%, rgba(7, 10, 19, 1));
+  background-image: linear-gradient(
+    rgba(7, 10, 19, 0) 30%,
+    rgba(7, 10, 19, 1) 90%
+  );
   align-items: center;
 }
 
@@ -65,12 +68,79 @@ header {
   top: 0;
   right: 0;
   z-index: -1;
+  display: flex;
   left: 0;
   bottom: 0;
   background-size: cover;
   opacity: 0.3;
   background-position: center center;
-  background-image: url(./img/flcty-17.jpg);
+}
+
+.slide {
+  flex: 1;
+  opacity: 0;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+@keyframes fade1 {
+  0% {
+    opacity: 1;
+  }
+  27% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  96% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade2 {
+  27% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  60% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slide1 {
+  animation: fade1 20s ease-in-out infinite;
+}
+.slide2 {
+  animation: fade2 20s ease-in-out infinite;
+}
+.slide3 {
+  animation: fade3 20s ease-in-out infinite;
 }
 
 .button {
@@ -85,6 +155,13 @@ header {
   transform: skewY(-6deg);
 }
 
+.button.large {
+  display: inline-block;
+  margin: 0 auto;
+  transform: none;
+  font-size: 36px;
+}
+
 .paragraph {
   padding: calc(var(--space) * 8);
   font-size: 40px;
@@ -92,6 +169,9 @@ header {
   margin: 0 auto;
 }
 
+.center {
+  text-align: center;
+}
 @media (max-width: 800px) {
   .paragraph {
     font-size: 30px;
@@ -106,6 +186,17 @@ section {
   font-size: 48px;
   font-weight: var(--heavy);
 }
+h3.headline {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.headline-3 {
+  text-align: center;
+  font-weight: normal;
+  line-height: 1;
+  padding: 0;
+}
 
 .client-grid {
   display: grid;
@@ -114,12 +205,6 @@ section {
   margin: 0 auto;
   grid-template-columns: 40% 40%;
   grid-gap: calc(var(--space) * 16);
-}
-
-@media (max-width: 800px) {
-  .client-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .client {
@@ -151,4 +236,86 @@ section {
 .client-description {
   display: block;
   margin-bottom: -17px;
+}
+
+@media (max-width: 800px) {
+  .client-grid {
+    grid-template-columns: 1fr;
+  }
+  .client-name {
+    font-size: 36px;
+  }
+  .client-description {
+    margin-bottom: -10px;
+  }
+}
+
+/* Price,Time,Scope */
+
+.triangle-text {
+  display: none;
+}
+#price:checked ~ .price {
+  display: block;
+}
+
+#scope:checked ~ .scope {
+  display: block;
+}
+
+#time:checked ~ .time {
+  display: block;
+}
+
+.howdoesitwork {
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.triangle-label {
+  cursor: pointer;
+  padding: calc(var(--space) * 4);
+  opacity: 0.3;
+  font-weight: var(--bold);
+  font-size: 38px;
+  display: inline-block;
+  transition: ease-in-out 170ms opacity;
+}
+
+.triangle-label:hover {
+  opacity: 0.5;
+}
+
+.howdoesitwork input {
+  opacity: 0;
+  position: absolute;
+  z-index: -5;
+  visibility: hidden;
+}
+.howdoesitwork input:checked + .triangle-label {
+  opacity: 1;
+}
+
+.cta {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  h2.headline {
+    font-size: 38px;
+  }
+  h3.headline {
+    font-size: 26px;
+  }
+  .button.large {
+    font-size: 26px;
+  }
+}
+
+footer {
+  background-color: #f5a623;
+  margin-top: 300px;
+  text-align: center;
+  padding: 50px 25px;
+  color: black;
 }
