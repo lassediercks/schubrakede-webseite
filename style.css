@@ -1,9 +1,8 @@
 :root {
   --space: 4px;
   --border-radius: 3px;
-  --regular: 300;
-  --bold: 400;
-  --heavy: 700;
+  --regular: 400;
+  --bold: 700;
 }
 
 *,
@@ -17,7 +16,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Cabin", sans-serif;
 }
 
 header {
@@ -142,6 +141,9 @@ header {
 .slide3 {
   animation: fade3 20s ease-in-out infinite;
 }
+.topbar-button {
+  margin-top: -10px;
+}
 
 .button {
   display: flex;
@@ -165,6 +167,7 @@ header {
 .paragraph {
   padding: calc(var(--space) * 8);
   font-size: 40px;
+  line-height: 1.5;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -184,7 +187,7 @@ section {
 .headline {
   text-align: center;
   font-size: 48px;
-  font-weight: var(--heavy);
+  font-weight: var(--bold);
 }
 h3.headline {
   font-size: 36px;
@@ -230,7 +233,7 @@ h3.headline {
   margin-top: -22px;
   display: block;
   font-weight: var(--bold);
-  font-size: 58px;
+  font-size: 48px;
   line-height: 1;
 }
 .client-description {
