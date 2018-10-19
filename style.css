@@ -59,6 +59,7 @@ header {
   width: 100%;
   justify-content: space-between;
   display: flex;
+  align-items: center;
   padding: calc(var(--space) * 8) calc(var(--space) * 6);
 }
 
@@ -141,9 +142,6 @@ header {
 .slide3 {
   animation: fade3 20s ease-in-out infinite;
 }
-.topbar-button {
-  margin-top: -10px;
-}
 
 .button {
   display: flex;
@@ -152,9 +150,17 @@ header {
   border-radius: var(--border-radius);
   color: black;
   padding: calc(var(--space) * 2) calc(var(--space) * 4);
-  font-weight: var(--bold);
+
   text-decoration: none;
-  transform: skewY(-6deg);
+}
+
+.twitch-widget {
+  background: #4b367c;
+  color: white;
+  border: 1px solid white;
+}
+.twitch-widget:empty {
+  display: none;
 }
 
 .button.large {
