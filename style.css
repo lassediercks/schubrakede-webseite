@@ -187,6 +187,11 @@ header {
 .list-item {
   margin-bottom: 1em;
 }
+
+.list-item a {
+  margin-bottom: 1em;
+  color: inherit;
+}
 .center {
   text-align: center;
 }
