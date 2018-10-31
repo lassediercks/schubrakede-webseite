@@ -23,41 +23,92 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="patterns.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <div class="topbar">
+    <div class="stream_overlay">
 
-
-            <a href="https://www.twitch.tv/schubrakede" class="button twitch-widget" id="twitch-widget" target="_blank"></a>
-            <a class="button topbar-button" href="skype:live:skype_26846?call">
-                <span class="button-content">
-                    Skype Call
-                </span>
-            </a>
+        <h1 class="stream_overlay-title">Ich bin Live!</h1>
+        <div class="stream_overlay-buttons">
+            <a href="https://twitch.tv/schubrakede" target="_blank" class="sr-button sr-button--twitch">Auf
+                Twitch Ansehen</a>
+            <a href="skype:live:skype_26846?call" class=" sr-button sr-button--skype">Bei Skype Anrufen</a>
         </div>
-        <img class="logo" src="./img/Schubrakede.svg" alt="">
-        <p class="header__line">Ich drück dich nach vorne!! <br> Mit allem was ich habe.</p>
+        <div class="stream_overlay-social">
+            <a class="sr-social-link" href="https://instagram.com/schubrakede"><img class="sr-icon" src="/img/instagram.svg"
+                    alt=""></a>
+            <a class="sr-social-link" href="https://anchor.fm/schubrakede"><img class="sr-icon" src="/img/microphone.svg"
+                    alt=""></a>
+            <a class="sr-social-link" href="https://www.youtube.com/channel/UCNC51NaCsGSmVAyvHu0TpPQ?view_as=subscriber"><img
+                    class="sr-icon" src="/img/youtube.svg" alt=""></a>
+        </div>
 
-    </header>
-    <div class="bgi">
-        <div class="slide slide1" style="background-image: url('./img/flcty-26.jpg')"></div>
-        <div class="slide slide2" style="background-image: url('./img/cloedenis-32.jpg')"></div>
-        <div class="slide slide3" style="background-image: url('./img/karsten-27.jpg')"></div>
     </div>
+
+    <header>
+        <span class="header_time-hint">Jeden Wochentag von 14:00 - 18:00 </span>
+
+        <div class="header_logo">
+            <img src="/img/Schubrakede.svg" alt="">
+            <span class="header_logo-text">Livestream für Selbständige, Künstler und kleine Unternehmen</span>
+            <a href="https://twitch.tv/schubrakede" class="sr-button sr-button--twitch">Auf Twitch Folgen</a>
+        </div>
+        <div class="header_social">
+            <a class="sr-social-link" href="https://instagram.com/schubrakede"><img class="sr-icon" src="/img/instagram.svg"
+                    alt=""></a>
+            <a class="sr-social-link" href="https://anchor.fm/schubrakede"><img class="sr-icon" src="/img/microphone.svg"
+                    alt=""></a>
+            <a class="sr-social-link" href="https://www.youtube.com/channel/UCNC51NaCsGSmVAyvHu0TpPQ?view_as=subscriber"><img
+                    class="sr-icon" src="/img/youtube.svg" alt=""></a>
+        </div>
+    </header>
+
     <main class="content">
+        <section class="introduction bgm bgm-fire">
+            <div class="introduction_content">
+                <div class="introduction_image-container">
+                    <img class="introduction_image" src="/img/20181023-DSC_5675-2.jpg" alt="">
+                </div>
+                <div class="introduction_info">
+                    <h2 class="introduction_headline sr-headline">Ich bin Lasse!</h2>
+                    <p class="introduction_text sr-paragraph">
+                        Nachdem ich als Mediengestalter in den hirachischen Hallen eines Plattenlabes ins Berufsleben
+                        gestartet
+                        bin hab ich mich nach 5 Jahren bei Jimdo selbständig gemacht.
+                        Nun möchte ich all die tollen Fähigkeiten die ich in meiner Karriere erlangt habe nutzen um
+                        auch
+                        Leuten
+                        zu helfen die nicht über das Budget von großen Firmen verfügen.
+                    </p>
+                </div>
+            </div>
+
+            <div class="payment">
+                <h2 class="sr-headline payment_headline"><img class="payment_icon" src="/img/wallet.svg" alt="">Pay as
+                    you feel</h2>
+                <div class="payment_text-grid">
+
+                    <p class="sr-paragraph payment_text">
+                        Das bedeutet: Wir reden nie darüber was das ganze kostet sondern was das Wertvollste ist was
+                        ich
+                        für dich tun kann. Hinterher kannst du selber entscheiden ob und wieviel du mich bezahlen
+                        möchtest.
+                    </p>
+                    <p class="sr-paragraph payment_text">
+                        Über die Einnahmen werde ich auch transparent im Stream sprechen ausser es gibt einen richtig
+                        guten
+                        Grund dies nicht zu tun.
+                    </p>
+                </div>
+            </div>
+        </section>
 
 
         <footer>
-            <h2>Impressum</h2>
-            <b>Schubrakede</b>
-            <br>
-            Lasse Diercks <br>
-            Clemens-Schultz-Straße 38 <br>
-            20359 Hamburg <br>
+
 
 
         </footer>
@@ -81,18 +132,23 @@
                     "&callback=?",
                     function (data) {
                         if (data.stream) {
-                            twitch_widget.html(
-                                "<span class='online'></span>Ich bin gerade am streamen!",
-                                "</span>"
-                            );
+                            document.getElementsByTagName('body')[0].classList.add('streaming');
+
                         } else {
-                            twitch_widget.html("");
+                            document.getElementsByTagName('body')[0].classList.remove('streaming');
                         }
                     }
-                );
+                )
             })();
 
         </script>
+
+
+        <div class="background_image background-image--fire"></div>
+        <div class="background_image background-image--firework"></div>
+        <div class="background_image background-image--spacestation"></div>
+    </main>
+
 
 </body>
 

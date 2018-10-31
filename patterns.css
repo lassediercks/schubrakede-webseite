@@ -1,0 +1,69 @@
+:root {
+  --sr-base: 4px;
+  --sr-font-weight-regular: 400;
+  --sr-font-weight-bold: 700;
+
+  --twitch-purple: #6441a4;
+  --skype-blue: #02abea;
+}
+
+/* Background mesh */
+
+/* Main Background mesh */
+.bgm {
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+}
+
+.bgm-fire {
+  background-image: url("/img/bg/fire.png");
+}
+/* Button */
+
+.sr-button {
+  text-decoration: none;
+  letter-spacing: 0.035em;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  padding: calc(var(--sr-base) * 4) calc(var(--sr-base) * 14);
+  border: none;
+  font-size: inherit;
+  color: white;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.12);
+  font-weight: var(--sr-font-weight-regular);
+}
+
+.sr-button--twitch {
+  background: var(--twitch-purple);
+}
+
+.sr-button--skype {
+  background: var(--skype-blue);
+}
+
+/* Icon */
+.sr-icon {
+  height: 40px;
+}
+
+/* Social Link */
+
+.sr-social-link {
+  display: inline-block;
+  margin: 0 calc(var(--sr-base) * 4);
+}
+
+/* Headlines */
+
+h2.sr-headline {
+  font-size: 40px;
+}
+
+/* Paragraph */
+
+.sr-paragraph {
+  line-height: 28px;
+  font-weight: var(--sr-font-weight-regular);
+}
