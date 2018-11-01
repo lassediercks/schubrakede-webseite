@@ -12,7 +12,7 @@
 }
 
 body {
-  background: #070a13;
+  background: var(--sr-dark);
   color: white;
   margin: 0;
   font-size: 20px;
@@ -140,4 +140,80 @@ header {
   display: grid;
   grid-template-columns: 300px 300px;
   grid-gap: calc(var(--sr-base) * 8);
+}
+
+/* Costs */
+
+.costs {
+  text-align: center;
+  padding: calc(var(--sr-base) * 50) 0;
+}
+
+.costs_graph {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 700px 300px 400px;
+  grid-template-rows: auto auto;
+}
+
+.costs_graph-private-text {
+  grid-column: 1;
+  text-align: right;
+  padding: calc(var(--sr-base) * 5);
+}
+
+.costs_graph-private-amount {
+  border-radius: 20px 0 0 20px;
+  padding: calc(var(--sr-base) * 2) calc(var(--sr-base) * 5);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 5px solid white;
+
+  font-size: 40px;
+  border-right: none;
+}
+.costs_graph-business-amount {
+  border-radius: 0 20px 20px 0;
+
+  display: flex;
+  justify-content: flex-start;
+  padding: calc(var(--sr-base) * 2) calc(var(--sr-base) * 5);
+
+  background: white;
+  color: var(--sr-dark);
+  font-size: 40px;
+  border: 5px solid white;
+  text-align: left;
+}
+
+.costs_graph-business-text {
+  padding: calc(var(--sr-base) * 5);
+  text-align: left;
+}
+
+.costs_graph-business-list {
+  padding: 0;
+  font-size: 20px;
+  text-align: left;
+  list-style-type: none;
+}
+
+/* how */
+
+.how {
+  padding: calc(var(--sr-base) * 50) 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.how-text {
+  margin: 0;
+  margin-bottom: calc(var(--sr-base) * 8);
+  font-size: 40px;
+  max-width: 800px;
+  line-height: 52px;
 }

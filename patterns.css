@@ -2,6 +2,7 @@
   --sr-base: 4px;
   --sr-font-weight-regular: 400;
   --sr-font-weight-bold: 700;
+  --sr-dark: #080a11;
 
   --twitch-purple: #6441a4;
   --skype-blue: #02abea;
@@ -11,14 +12,23 @@
 
 /* Main Background mesh */
 .bgm {
-  background-size: cover;
   background-position: center center;
-  background-blend-mode: screen;
   background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-blend-mode: lighten;
+  background-color: var(--sr-dark);
 }
 
 .bgm-fire {
   background-image: url("/img/bg/fire.png");
+}
+
+.bgm-firework {
+  background-image: url("/img/bg/firework.png");
+}
+
+.bgm-space {
+  background-image: url("/img/bg/spacestation.png");
 }
 /* Button */
 
@@ -58,6 +68,10 @@
 /* Headlines */
 
 h2.sr-headline {
+  font-size: 50px;
+}
+
+h3.sr-headline {
   font-size: 40px;
 }
 

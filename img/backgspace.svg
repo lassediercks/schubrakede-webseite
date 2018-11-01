@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="57px" height="32px" viewBox="0 0 57 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Keyboard/Elements/Buttons/Numeric" transform="translate(-259.000000, -24.000000)" fill="#1A1A1A">
+            <g id="Keyboard_Backspace-Dark" transform="translate(240.000000, 10.000000)">
+                <path d="M36.8825777,14 L73.6857143,14 C74.7902838,14 75.6857143,14.8954305 75.6857143,16 L75.6857143,44 C75.6857143,45.1045695 74.7902838,46 73.6857143,46 L36.8482311,46 C36.3506759,46 35.8709859,45.8145393 35.502836,45.4798352 L20.579914,31.9126318 C19.7626236,31.1695907 19.7024327,29.904692 20.4454738,29.0874016 C20.4748029,29.0551418 20.505179,29.0238496 20.5365535,28.9935753 L35.4938222,14.5607786 C35.8666364,14.201037 36.3645001,14 36.8825777,14 Z M59.3446399,22.3959381 L53.950333,27.790245 L48.5543949,22.3943069 L46.3963459,24.5523559 L51.792284,29.948294 L46.3959381,35.3446399 L48.5543949,37.5030967 L53.9507408,32.1067508 L59.3462711,37.5022812 L61.5043201,35.3442321 L56.1087898,29.9487018 L61.5030967,24.5543949 L59.3446399,22.3959381 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
