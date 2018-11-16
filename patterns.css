@@ -5,6 +5,7 @@
   --sr-dark: #080a11;
 
   --twitch-purple: #6441a4;
+  --appearIn-rose: #ff2e63;
   --skype-blue: #02abea;
 }
 
@@ -33,6 +34,7 @@
 /* Button */
 
 .sr-button {
+  display: inline-block;
   text-decoration: none;
   letter-spacing: 0.035em;
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
@@ -51,6 +53,10 @@
 
 .sr-button--skype {
   background: var(--skype-blue);
+}
+
+.sr-button--appear {
+  background: var(--appearIn-rose);
 }
 
 /* Icon */
@@ -78,6 +84,13 @@ h3.sr-headline {
 /* Paragraph */
 
 .sr-paragraph {
+  max-width: 400px;
   line-height: 28px;
   font-weight: var(--sr-font-weight-regular);
+}
+
+/* Links */
+
+a {
+  color: inherit;
 }
