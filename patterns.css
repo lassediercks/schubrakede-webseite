@@ -47,6 +47,12 @@
   font-weight: var(--sr-font-weight-regular);
 }
 
+@media (max-width: 600px) {
+  .sr-button {
+    padding: calc(var(--sr-base) * 4) calc(var(--sr-base) * 7);
+  }
+}
+
 .sr-button--twitch {
   background: var(--twitch-purple);
 }
@@ -62,6 +68,12 @@
 /* Icon */
 .sr-icon {
   height: 40px;
+}
+
+@media (max-width: 600px) {
+  .sr-icon {
+    height: 20px;
+  }
 }
 
 /* Social Link */

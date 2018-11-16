@@ -28,7 +28,7 @@ body {
 
 .stream_overlay {
   background-color: #070a13;
-  display: flex;
+  display: none;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -115,6 +115,9 @@ header {
   line-height: 1.8rem;
 }
 
+.header_time-hint {
+  text-align: center;
+}
 /* Introduction */
 
 .introduction {
@@ -160,7 +163,7 @@ header {
 
 /* Payment  */
 .payment {
-  padding: calc(var(--sr-base) * 25) 0;
+  padding: calc(var(--sr-base) * 25) calc(var(--sr-base) * 5);
 }
 .payment_icon {
   margin-top: -5px;
@@ -180,8 +183,11 @@ header {
 }
 
 @media (max-width: 740px) {
+  .payment_headline {
+    flex-direction: column;
+  }
   .payment_text-grid {
-    grid-template-columns: 300px;
+    grid-template-columns: minmax(auto, 300px);
   }
 }
 /* Costs */
@@ -198,6 +204,7 @@ header {
 .costs_graph {
   justify-content: center;
   display: grid;
+  padding: 0 calc(var(--sr-base) * 5);
   grid-template-columns: 400px 400px;
   grid-template-rows: auto auto;
 }
@@ -247,10 +254,12 @@ header {
 
 @media (max-width: 920px) {
   .costs_graph {
-    grid-template-columns: 420px;
+    padding: calc(var(--sr-graph));
+    grid-template-columns: minmax(auto, 420px);
   }
 
   .costs_introduction {
+    padding: 0 calc(var(--sr-base) * 5);
     text-align: left;
   }
 
