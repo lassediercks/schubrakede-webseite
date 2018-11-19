@@ -22,10 +22,6 @@ body {
 
 /* Overlay */
 
-.streaming .stream_overlay {
-  display: flex;
-}
-
 .stream_overlay {
   background-color: #070a13;
   display: none;
@@ -42,6 +38,9 @@ body {
   background-size: cover;
   background-position: center center;
   background-image: url("/img/desk.png");
+}
+.streaming .stream_overlay {
+  display: flex;
 }
 
 .stream_overlay-title {
