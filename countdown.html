@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>🚀 - Schuuuuuuuuuub</title>
+    <meta property="og:site_name" content="Schubrakede" />
+    <meta property="og:title" content="Schubrakede" />
+
+    <link rel="canonical" href="https://www.Schubrakede.de" />
+    <meta name="robots" content="index, follow" />
+
+    <meta name="description" content="19.11. wird gestartet" />
+    <meta property=" og:description" content="19.11. wird gestartet" />
+    <meta
+      property="og:image"
+      content="https://schubrakede.de/img/open-graph.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:email" content="hi@Schubrakede.de" />
+    <meta property="og:url" content="https://Schubrakede.de/" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:400,700"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://addevent.com/libs/atc/1.6.1/atc.min.js"
+      async
+      defer
+    ></script>
+  </head>
+
+  <style>
+    body {
+      background-image: url("https://images.unsplash.com/photo-1517976384346-3136801d605d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6e6ee2cf355b57ff64f8183a16bdd6b7&auto=format&fit=crop&w=1900&q=80");
+      background-size: cover;
+    }
+
+    body {
+      font-size: 60px;
+      background-color: #070a13;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: "Cabin", sans-serif;
+    }
+
+    h1 {
+      font-weight: 100;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      position: relative;
+      z-index: 5;
+      justify-content: center;
+      width: 100%;
+      color: white;
+      background-image: linear-gradient(
+        rgba(7, 10, 19, 0) 30%,
+        rgba(7, 10, 19, 1) 90%
+      );
+      align-items: center;
+    }
+  </style>
+
+  <body>
+    <header><div class="countdown"></div></header>
+
+    <script type="text/javascript">
+      const countdown = document.querySelector(".countdown");
+
+      // Set launch date
+      const launchDate = new Date("Nov 19, 2018 14:00:00").getTime();
+
+      const intvl = setInterval(() => {
+        const now = new Date().getTime();
+
+        const daysLeft = launchDate - now;
+
+        const days = Math.floor(daysLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (daysLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((daysLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((daysLeft % (1000 * 60)) / 1000);
+
+        countdown.innerHTML = `
+                    <div>${seconds} <span> Sekunden</span></div>
+                    <div>${minutes} <span> Minutes</span></div>
+                    <div>${hours} <span> Stunden</span></div>
+                    <div>${days} <span> Tage</span></div> 
+                                                                                        `;
+      }, 1000);
+    </script>
+  </body>
+</html>
