@@ -4,9 +4,11 @@
   --sr-font-weight-bold: 700;
   --sr-dark: #080a11;
 
+  --sr-grey: #4b4b4b;
   --twitch-purple: #6441a4;
   --appearIn-rose: #ff2e63;
   --skype-blue: #02abea;
+  --whatsapp-green: #01e675;
 }
 
 /* Background mesh */
@@ -31,17 +33,24 @@
 .bgm-space {
   background-image: url("/img/bg/spacestation.png");
 }
+
+.bgm-galaxy {
+  background-image: url("/img/bg/galaxy.png");
+}
 /* Button */
 
 .sr-button {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
   letter-spacing: 0.035em;
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
   padding: calc(var(--sr-base) * 4) calc(var(--sr-base) * 14);
   border: none;
   font-size: inherit;
-  color: white;
+  color: var(--sr-grey);
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 3px;
   box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.12);
   font-weight: var(--sr-font-weight-regular);
@@ -54,15 +63,42 @@
 }
 
 .sr-button--twitch {
+  color: white;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
   background: var(--twitch-purple);
 }
 
 .sr-button--skype {
+  color: white;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
   background: var(--skype-blue);
 }
 
 .sr-button--appear {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+
   background: var(--appearIn-rose);
+}
+
+.sr-button--whatsapp {
+  background: var(--whatsapp-green);
+}
+
+/* Button Group */
+
+.sr-button-group {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: calc(var(--sr-base) * 3);
+}
+@media (max-width: 510px) {
+  .sr-button-group {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
 }
 
 /* Icon */
