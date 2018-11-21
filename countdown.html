@@ -77,7 +77,7 @@
       const countdown = document.querySelector(".countdown");
 
       // Set launch date
-      const launchDate = new Date("Nov 19, 2018 14:00:00").getTime();
+      const launchDate = new Date("Nov 21, 2018 14:00:00").getTime();
 
       const intvl = setInterval(() => {
         const now = new Date().getTime();
@@ -88,9 +88,9 @@
         const seconds = Math.floor((daysLeft % (1000 * 60)) / 1000);
 
         countdown.innerHTML = `
-                                      <div>${minutes}<span>:</span></div>
-                                      <div>${seconds} <span> </span></div>
-                                                                                                                                                                            `;
+                                            <div>${minutes}<span>:</span></div>
+                                            <div>${seconds} <span> </span></div>
+                                                                                                                                                                                  `;
       }, 1000);
     </script>
   </body>
