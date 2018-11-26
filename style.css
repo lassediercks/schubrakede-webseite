@@ -24,8 +24,10 @@ body {
 
 .stream_overlay {
   background-color: #070a13;
-  display: none;
+
+  display: flex;
   align-items: center;
+  visibility: hidden;
   flex-direction: column;
   justify-content: center;
   width: 100vw;
@@ -38,9 +40,13 @@ body {
   background-size: cover;
   background-position: center center;
   background-image: url('/img/desk.png');
+  opacity: 0;
+  transition: opacity 170ms ease-in-out, visibility 170ms ease-in-out;
 }
+
 .streaming .stream_overlay {
-  display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 .stream_overlay-title {
@@ -80,6 +86,11 @@ body {
   bottom: calc(var(--sr-base) * 5);
 }
 
+.stream_overlay-close-button {
+  position: absolute;
+  right: calc(var(--sr-base) * 8);
+  top: calc(var(--sr-base) * 8);
+}
 /* Header */
 
 header {

@@ -42,7 +42,7 @@
 <body>
 
     <div class="stream_overlay">
-
+        <button onclick="ToggleOverlay()" class="stream_overlay-close-button"><img src="/img/cross.svg" alt=""></button>
         <h1 class="stream_overlay-title">Ich bin Live!</h1>
         <h2 class="stream_overlay-subline">Jetzt in diesem Moment kannste' bei Twitch zugucken</h2>
         <div class="stream_overlay-buttons">
@@ -374,6 +374,12 @@ Erst war es eine Produktidee aber nun will Anika tltns zu einer Agentur umbauen 
                 )
             })();
 
+
+            let BodyElement = document.getElementsByTagName('body')[0];
+
+            function ToggleOverlay (){
+                BodyElement.classList.toggle('streaming');
+            }
         </script>
 
 
