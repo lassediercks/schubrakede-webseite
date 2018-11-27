@@ -7,6 +7,7 @@
   --sr-grey: #4b4b4b;
   --twitch-purple: #6441a4;
   --appearIn-rose: #ff2e63;
+  --patreon-orange: rgb(249, 104, 84);
   --skype-blue: #02abea;
   --whatsapp-green: #01e675;
 }
@@ -87,11 +88,21 @@
   background: var(--whatsapp-green);
 }
 
+.sr-button--patreon{
+  color: white;
+  background: var(--patreon-orange);
+}
+
+.sr-button--donate{
+  background: #0e0e0e;
+  color: white;
+}
 /* Button Group */
 
 .sr-button-group {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-auto-columns: auto;
+  grid-auto-flow: column;
   grid-gap: calc(var(--sr-base) * 3);
 }
 @media (max-width: 510px) {
@@ -126,9 +137,21 @@ h2.sr-headline {
   margin-bottom: 1rem;
 }
 
+@media (max-width: 800px){
+  h2.sr-headline {
+    font-size: 40px;
+  }
+}
+
 h3.sr-headline {
   font-size: 40px;
 }
+@media (max-width: 800px){
+  h3.sr-headline {
+    font-size: 32px;
+  }
+}
+
 
 /* Paragraph */
 

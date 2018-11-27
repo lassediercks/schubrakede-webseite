@@ -312,6 +312,13 @@ header {
   line-height: 52px;
 }
 
+@media (max-width: 800px){
+  .how-text{
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
 /* footer */
 
 footer {
@@ -405,5 +412,42 @@ footer a {
   }
   .supported_list-what {
     grid-row: 3;
+  }
+}
+
+
+/* Supportme */
+
+.support-me{
+  text-align: center;
+  color: black;
+  background: white;
+  padding: calc(var(--sr-base) * 20) calc(var(--sr-base) * 14);
+  max-width: 80vw;
+  margin: 0 auto;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 567px){
+  .support-me{
+    max-width: 95vw;
+    padding: calc(var(--sr-base) * 10)  calc(var(--sr-base) * 6);
+  }  
+}
+
+h2.support-me-headline{
+  margin-top: 0;
+  margin-bottom: calc(var(--sr-base) * 10);
+}
+
+
+
+@media (max-width: 1077px){
+  .support-me-buttons{
+    grid-auto-flow: row;
+    grid-auto-rows: auto;
   }
 }
