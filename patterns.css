@@ -9,7 +9,7 @@
   --appearIn-rose: #ff2e63;
   --patreon-orange: rgb(249, 104, 84);
   --skype-blue: #02abea;
-  --whatsapp-green: #01e675;
+  --whatsapp-green: #09E575;
 }
 
 /* Background mesh */
@@ -85,6 +85,7 @@
 }
 
 .sr-button--whatsapp {
+  color: white;
   background: var(--whatsapp-green);
 }
 
