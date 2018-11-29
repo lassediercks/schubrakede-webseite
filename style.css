@@ -94,7 +94,7 @@ body {
 /* Header */
 
 header {
-  background-image: url('/img/desk.png');
+  background-image: url('/img/cards.png');
   background-size: cover;
   background-position: center center;
   padding: calc(var(--sr-base) * 6);
@@ -119,7 +119,7 @@ header {
 
 .header_logo-text {
   max-width: 22rem;
-  margin: 2rem 0;
+  margin: 1rem 0 1.5rem 0;
   text-align: center;
   font-size: 1.4rem;
   line-height: 1.8rem;
@@ -312,8 +312,8 @@ header {
   line-height: 52px;
 }
 
-@media (max-width: 800px){
-  .how-text{
+@media (max-width: 800px) {
+  .how-text {
     font-size: 32px;
     line-height: 40px;
   }
@@ -415,10 +415,9 @@ footer a {
   }
 }
 
-
 /* Supportme */
 
-.support-me{
+.support-me {
   text-align: center;
   color: black;
   background: white;
@@ -431,22 +430,20 @@ footer a {
   flex-direction: column;
 }
 
-@media (max-width: 567px){
-  .support-me{
+@media (max-width: 567px) {
+  .support-me {
     max-width: 95vw;
-    padding: calc(var(--sr-base) * 10)  calc(var(--sr-base) * 6);
-  }  
+    padding: calc(var(--sr-base) * 10) calc(var(--sr-base) * 6);
+  }
 }
 
-h2.support-me-headline{
+h2.support-me-headline {
   margin-top: 0;
   margin-bottom: calc(var(--sr-base) * 10);
 }
 
-
-
-@media (max-width: 1077px){
-  .support-me-buttons{
+@media (max-width: 1077px) {
+  .support-me-buttons {
     grid-auto-flow: row;
     grid-auto-rows: auto;
   }
