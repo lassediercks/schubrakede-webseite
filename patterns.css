@@ -9,7 +9,7 @@
   --appearIn-rose: #ff2e63;
   --patreon-orange: rgb(249, 104, 84);
   --skype-blue: #02abea;
-  --whatsapp-green: #09E575;
+  --whatsapp-green: #09e575;
 }
 
 /* Background mesh */
@@ -24,20 +24,24 @@
 }
 
 .bgm-fire {
-  background-image: url("/img/bg/fire.png");
+  background-image: url('/img/bg/fire.png');
 }
 
 .bgm-firework {
-  background-image: url("/img/bg/firework.png");
+  background-image: url('/img/bg/firework.png');
 }
 
 .bgm-space {
-  background-image: url("/img/bg/spacestation.png");
+  background-image: url('/img/bg/spacestation.png');
 }
 
 .bgm-galaxy {
-  background-image: url("/img/bg/galaxy.png");
+  background-image: url('/img/bg/galaxy.png');
 }
+.bgm-rocket {
+  background-image: url('/img/bg/rocket.png');
+}
+
 /* Button */
 
 .sr-button {
@@ -89,12 +93,12 @@
   background: var(--whatsapp-green);
 }
 
-.sr-button--patreon{
+.sr-button--patreon {
   color: white;
   background: var(--patreon-orange);
 }
 
-.sr-button--donate{
+.sr-button--donate {
   background: #0e0e0e;
   color: white;
 }
@@ -138,7 +142,7 @@ h2.sr-headline {
   margin-bottom: 1rem;
 }
 
-@media (max-width: 800px){
+@media (max-width: 800px) {
   h2.sr-headline {
     font-size: 40px;
   }
@@ -147,12 +151,11 @@ h2.sr-headline {
 h3.sr-headline {
   font-size: 40px;
 }
-@media (max-width: 800px){
+@media (max-width: 800px) {
   h3.sr-headline {
     font-size: 32px;
   }
 }
-
 
 /* Paragraph */
 
