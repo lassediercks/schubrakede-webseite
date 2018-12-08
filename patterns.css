@@ -137,6 +137,9 @@
 
 /* Headlines */
 
+h1.sr-headline {
+  font-size: 66px;
+}
 h2.sr-headline {
   font-size: 50px;
   margin-bottom: 1rem;
@@ -160,7 +163,7 @@ h3.sr-headline {
 /* Paragraph */
 
 .sr-paragraph {
-  max-width: 400px;
+  max-width: 600px;
   line-height: 28px;
   font-weight: var(--sr-font-weight-regular);
 }

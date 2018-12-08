@@ -489,3 +489,14 @@ h2.support-me-headline {
     grid-auto-rows: auto;
   }
 }
+
+/* Coc */
+
+.coc {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.coc-report {
+  margin: 10em 0;
+}
