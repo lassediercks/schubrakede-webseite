@@ -7,6 +7,16 @@
   --sr-grey: #2f3433;
 }
 
+.umbaupause {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #070a13;
+  color: white;
+  height: 100vh;
+  padding: 1em;
+}
+
 *,
 *:after,
 *:before {
