@@ -1,18 +1,152 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  --sr-dark: #26272a;
+  --sr-orange: #fa975e;
+  --sr-blue: #4274ff;
+  --twitch-purple: #6441a4;
+  --appearIn-rose: #ff2e63;
+  --patreon-orange: rgb(249, 104, 84);
+  --skype-blue: #02abea;
+  --whatsapp-green: #09e575;
+}
+
 body {
+  font-size: 18px;
+  color: white;
   margin: 0;
+  font-family: 'Fira Sans', sans-serif;
   padding: 0;
   background-color: #26272a;
   background-image: url('/img/bg/noise.png'), url('/img/bg/planets.png');
+  background-position: initial initial, 50% 50%;
 }
 
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 100vh;
+  width: 100%;
+  padding: calc(4px * 3);
 }
 
+main {
+  padding: calc(4px * 3);
+}
+
+.rakede {
+  max-width: 100vw;
+  width: calc(100% * 1vw);
+}
 .logo {
-  margin: calc(4px * 6);
+  text-align: center;
+  width: 100%;
+
+  margin: calc(4px * 12);
+}
+.logo_word {
+  line-height: 0.8;
+  font-size: 13vw;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.logo_claim {
+  color: var(--sr-orange);
+  font-weight: 300;
+  text-transform: uppercase;
+
+  letter-spacing: 0.3vw;
+  font-size: 28px;
+}
+.header-buttons {
+  margin: calc(4px * 12);
+}
+.skills-list {
+  text-align: center;
+
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 60px;
+  list-style-type: none;
+}
+
+.skills-list_item {
+  display: inline-flex;
+  padding: calc(4px * 5);
+}
+
+/* global */
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+/* Button */
+
+.sr-button {
+  background-image: url('/img/bg/noise.png'),
+    linear-gradient(164deg, rgba(255, 255, 255, 0.1) 49%, transparent 50%);
+  background-color: var(--sr-orange);
+  color: white;
+  display: inline-flex;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  min-width: 195px;
+  padding: 0 calc(4px * 6);
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 8px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.37);
+}
+
+.sr-button--twitch {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+  background-color: var(--twitch-purple);
+}
+
+.sr-button--skype {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+  background-color: var(--skype-blue);
+}
+
+.sr-button--appear {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+  color: white;
+
+  background-color: var(--appearIn-rose);
+}
+
+.sr-button--whatsapp {
+  color: white;
+  background-color: var(--whatsapp-green);
+}
+
+.sr-button--patreon {
+  color: white;
+  background: var(--patreon-orange);
+}
+
+/* SOcial */
+
+.sr-social-link {
+  display: inline-flex;
+  height: 45px;
+  margin: calc(4px * 3);
+}
+.sr-social-link img {
+  height: 100%;
 }
