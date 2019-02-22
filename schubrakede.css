@@ -72,10 +72,17 @@ main {
   text-align: center;
 
   margin: 0;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 60px;
   list-style-type: none;
+}
+
+@media (max-width: 800px) {
+  .skills-list {
+    font-size: 30px;
+  }
 }
 
 .skills-list_item {
@@ -125,14 +132,28 @@ h2 {
 
 .sr-button--appear {
   text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
-  color: white;
 
   background-color: var(--appearIn-rose);
 }
 
 .sr-button--whatsapp {
-  color: white;
   background-color: var(--whatsapp-green);
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .sr-button--call,
+  .sr-button--email {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .sr-button--whatsapp {
+    display: inline-flex;
+  }
+  .sr-button--email,
+  .sr-button--skype {
+    display: none;
+  }
 }
 
 .sr-button--patreon {
