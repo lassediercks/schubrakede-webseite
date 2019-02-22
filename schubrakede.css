@@ -16,6 +16,7 @@
 }
 
 body {
+  text-align: center;
   font-size: 18px;
   color: white;
   margin: 0;
@@ -37,7 +38,7 @@ header {
 }
 
 main {
-  padding: calc(4px * 3);
+  padding: calc(4px * 6);
 }
 
 .rakede {
@@ -170,4 +171,26 @@ h2 {
 }
 .sr-social-link img {
   height: 100%;
+}
+
+/* Feautre */
+
+.sr-feature {
+  text-align: left;
+  display: inline-block;
+  max-width: 400px;
+  padding: calc(4px * 6) 0;
+}
+.sr-feature_title {
+  font-size: 38px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.sr-feature_text {
+  line-height: 26px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 300;
 }
