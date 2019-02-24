@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://schubrake.de/</loc>
+    <loc>https://schubrake.de/categories/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://schubrake.de/categories/</loc>
-    <priority>0</priority>
+    <loc>https://schubrake.de/</loc>
   </url>
   
   <url>
