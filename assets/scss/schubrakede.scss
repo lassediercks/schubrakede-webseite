@@ -108,7 +108,7 @@ main {
 /* client Grid */
 
 .client-grid {
-  margin: 4px * 20 0;
+  margin: 4px * 20 auto;
   max-width: var(--sr-max-width);
   display: flex;
   flex-flow: row wrap;
