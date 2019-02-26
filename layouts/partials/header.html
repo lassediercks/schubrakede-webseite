@@ -17,17 +17,20 @@
     <meta property="og:description" content="{{ .Page.Description }}" />
 
     {{ if (.Resources.ByType "image") }}
-      {{ $image := ((index (first 1 (.Resources.ByType "image")) 0).Fill "1300x630 center").Permalink }}
-      <meta property="og:image" content="{{ $image }}">
+        {{ $ogimage := ((index (first 1 (.Resources.ByType "image")) 0).Fill "1300x630 center").Permalink }}
+      {{ $timage := ((index (first 1 (.Resources.ByType "image")) 0).Fill "1200x675 center").Permalink }}
+      <meta property="og:image" content="{{ $ogimage }}">
+      <meta name="twitter:image" content="{{ $timage }}">
     {{else}}
       <meta property="og:image" content="{{ .Site.BaseURL}}img/open-graph.png">
+      <meta name="twitter:image" content="{{ .Site.BaseURL}}img/open-graph.png">
+
     {{end}}
-    <meta property="og:image" content="{{ .Site.BaseURL}}img/open-graph.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/png">
     <meta property="og:email" content="og@schubrakede.de" />
-    <meta property="og:url" content="{{ .Site.BaseURL}}">
+    <meta property="og:url" content="{{ .Permalink}}">
 
     <meta name="twitter:card" content="photo">
     <meta name="twitter:site" content="@schubrakede">
@@ -35,7 +38,6 @@
     <meta name="twitter:image:height" content="675">
     <meta name="twitter:title" content="{{ .Page.Title }}">
     <meta name="twitter:description" content="{{ .Page.Description }}">
-    <meta name="twitter:image" content="{{ .Site.BaseURL}}img/open-graph.png">
 
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
