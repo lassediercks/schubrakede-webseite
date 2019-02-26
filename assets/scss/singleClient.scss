@@ -1,7 +1,21 @@
+.single-client_header {
+  padding: (4px * 20) (4px * 4);
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.single-client_header-title {
+  font-size: 5vw;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
 .single-client {
   margin: 0 auto;
   text-align: left;
   max-width: 800px;
+  padding: 0 calc(4px * 4);
 }
 
 .single-client img {

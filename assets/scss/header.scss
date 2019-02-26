@@ -44,6 +44,10 @@
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 690px) {
+    flex-direction: column;
+  }
 }
 
 .single-header_rakede {
@@ -67,17 +71,4 @@
 .single-header_logo-con:focus {
   outline: none;
   text-shadow: 3px 3px 1px var(--sr-orange);
-}
-
-.single-client_header {
-  padding: calc(4px * 20) 0;
-  text-align: left;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.single-client_header-title {
-  font-size: 5vw;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
 }
