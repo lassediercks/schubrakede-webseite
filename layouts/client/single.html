@@ -3,7 +3,14 @@
 
 <div class="single-client_header">
 <h1 class="single-client_header-title">{{ .Page.Description }}</h1>
-Kunde: {{ .Page.Title }}
+Kunde: {{ .Page.Title }} 
+
+{{ if .Page.Params.Customerurl}}
+<br>
+Webseite: <a href="{{.Page.Params.Customerurl}}">{{ .Page.Title }}</a>
+{{end}}
+<br>
+
 </div>
 <div class="single-client">
 {{ .Content }}

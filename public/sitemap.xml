@@ -12,6 +12,10 @@
   </url>
   
   <url>
+    <loc>https://schubrake.de/client/cloedenis/</loc>
+  </url>
+  
+  <url>
     <loc>https://schubrake.de/client/</loc>
     <priority>0</priority>
   </url>
@@ -26,6 +30,10 @@
   
   <url>
     <loc>https://schubrake.de/client/playground/</loc>
+  </url>
+  
+  <url>
+    <loc>https://schubrake.de/client/saskiaallers/</loc>
   </url>
   
   <url>

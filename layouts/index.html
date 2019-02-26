@@ -3,14 +3,27 @@
     <main>
       {{ .Content }}
 
-      <section>
-      <h2>Kunden</h2>
+      <section class="client-grid">
+      <h2 class="client-grid_headline">Kunden</h2>
       {{ range .Site.RegularPages}}
-  
+
         {{ if eq .Type  "client" }}
-          <a href="{{ .Permalink }}">{{.Title}}</a>
+          <a class="client-thumb" href="{{ .Permalink }}">
+          {{$scratch := newScratch}}
+          {{ if first 1 (.Resources.ByType "image")}}
+          {{$scratch.Set "image" ((index (first 1 (.Resources.ByType "image")) 0).Fill "500x281").Permalink }}
+          {{else}}
+          {{$scratch.Set "image" "./404" }}
+          {{end}}
+
+          {{$image := $scratch.Get "image" }}
+
+            <img class="client-thumb_image" src="{{ $image }}"> 
+            <h3 class="client-thumb_title">
+              {{.Title}}
+            </h3>
+          </a>
         {{ end }}
-          
       {{ end }}
       </section>
     </main>

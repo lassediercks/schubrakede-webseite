@@ -30,6 +30,7 @@ body {
 }
 
 @import './header.scss';
+@import './footer.scss';
 @import './singleClient.scss';
 @import './button.scss';
 
@@ -40,7 +41,7 @@ main {
 .skills-list {
   text-align: center;
 
-  margin: 0;
+  margin: 200px 0;
   padding: 0;
   text-transform: uppercase;
   font-weight: 300;
@@ -81,7 +82,9 @@ main {
 }
 
 /* Feautre */
-
+.features {
+  margin: 200px 0;
+}
 .sr-feature {
   text-align: left;
   display: inline-block;
@@ -100,6 +103,52 @@ main {
   margin: 0;
   font-size: 22px;
   font-weight: 300;
+}
+
+/* client Grid */
+
+.client-grid {
+  margin: 4px * 20 0;
+  max-width: var(--sr-max-width);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.client-grid_headline {
+  font-size: 60px;
+  width: 100%;
+}
+
+.client-thumb {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px * 8;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: box-shadow 170ms ease-out;
+  max-width: 500px;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 20px 5px var(--sr-orange);
+  }
+}
+
+.client-thumb_image {
+  opacity: 0.5;
+  width: 100%;
+}
+
+.client-thumb_title {
+  font-size: 32px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+  position: absolute;
 }
 
 @import './patterns.scss';
