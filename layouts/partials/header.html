@@ -5,7 +5,7 @@
      <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ .Page.Title }} - {{ .Page.Description }}</title>
+    <title>Schubrakede 🚀{{if .Page.Title}} - {{ .Page.Title }}{{end}}</title>
     <meta property="og:site_name" content="{{ .Page.Title }}" />
     <meta property="og:title" content="{{ .Page.Title }}" />
 
@@ -39,3 +39,55 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500,600,700,800,900" rel="stylesheet">
 </head>
 <body>
+{{ if eq .Type "home" }}
+<header class="home-header">
+    <div></div>
+    <img class="rakede"src="/img/rakede_stripes.svg" alt="">
+    <div class="logo">
+      <h1 class="logo_word">Schubrakede</h1>
+      <span class="logo_claim">Agentur mit Wumms</span>
+      <div class="header-buttons">
+        <a href="skype:live:skype_26846?call" class="sr-button sr-button--skype">Bei Skype anklingeln</a>
+        <a href="https://wa.me/+4915734376122" class="sr-button sr-button--whatsapp">Whatsapp texten</a>
+        <a href="mailto:cockpit@lassediercks.de" class="sr-button sr-button--email">E-Mail schreiben</a>
+        <a href="tel:004915734376122" class="sr-button sr-button--call">Anrufen</a>
+      </div>
+    </div>
+        <div class="social">
+          <a class="sr-social-link" href="https://www.youtube.com/channel/UCNC51NaCsGSmVAyvHu0TpPQ?view_as=subscriber"><img
+            class="sr-icon" src="/img/youtube.svg" alt=""></a>
+          <a class="sr-social-link" href="https://instagram.com/schubrakede"><img class="sr-icon" src="/img/instagram.svg"
+                  alt=""></a>
+          <a class="sr-social-link" href="https://anchor.fm/schubrakede"><img class="sr-icon" src="/img/microphone.svg"
+                  alt=""></a>
+          <a class="sr-social-link" href="https://twitter.com/schubrakede"><img
+              class="sr-icon" src="/img/twitter.svg" alt=""></a>
+          <a class="sr-social-link" href="https://facebook.com/schubrakede"><img
+              class="sr-icon" src="/img/facebook.svg" alt=""></a>
+        </div>
+  </header>
+{{ else }}
+<header class="single-header">
+    
+    <a href="{{ .Site.BaseURL }}" class="single-header_logo-con">
+    <h2 class="single-header_logo">Schubrakede</h2>
+    <img class="single-header_rakede" class="rakede"src="/img/rakede.svg" alt="">
+    </a>
+
+        <div class="social--small">
+
+          <a class="sr-social-link" href="https://www.youtube.com/channel/UCNC51NaCsGSmVAyvHu0TpPQ?view_as=subscriber"><img
+            class="sr-icon" src="/img/youtube.svg" alt=""></a>
+          <a class="sr-social-link" href="https://instagram.com/schubrakede"><img class="sr-icon" src="/img/instagram.svg"
+                  alt=""></a>
+          <a class="sr-social-link" href="https://anchor.fm/schubrakede"><img class="sr-icon" src="/img/microphone.svg"
+                  alt=""></a>
+          <a class="sr-social-link" href="https://twitter.com/schubrakede"><img
+              class="sr-icon" src="/img/twitter.svg" alt=""></a>
+          <a class="sr-social-link" href="https://facebook.com/schubrakede"><img
+              class="sr-icon" src="/img/facebook.svg" alt=""></a>
+
+        </div>
+</header>
+
+{{end}}

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://schubrake.de/client/</loc>
+    <loc>https://schubrake.de/</loc>
   </url>
   
   <url>
@@ -12,15 +12,20 @@
   </url>
   
   <url>
+    <loc>https://schubrake.de/client/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://schubrake.de/impressum/</loc>
+  </url>
+  
+  <url>
     <loc>https://schubrake.de/client/niklas/</loc>
   </url>
   
   <url>
     <loc>https://schubrake.de/client/playground/</loc>
-  </url>
-  
-  <url>
-    <loc>https://schubrake.de/</loc>
   </url>
   
   <url>

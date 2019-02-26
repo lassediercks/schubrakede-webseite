@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Schubrakede 🚀 on Schubrakede</title>
+    <title>Schubrakede</title>
     <link>https://schubrake.de/</link>
-    <description>Recent content in Schubrakede 🚀 on Schubrakede</description>
+    <description>Recent content on Schubrakede</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -11,12 +11,24 @@
     
     
     <item>
+      <title>Impressum</title>
+      <link>https://schubrake.de/impressum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://schubrake.de/impressum/</guid>
+      <description>Schubrakede Wann darf man sich eigentlich Agentur nennen?
+In diesem Moment bin ich eine 1-Mann Agentur aber mit großen Plänen das zu etwas ganz großem werden zu lassen wenn das mit den Aufträgen läuft.
+Ein weiterer Versuch von Lasse Diercks
+Lasse Diercks Clemens-Schultz-Straße 38 20359 Hamburg</description>
+    </item>
+    
+    <item>
       <title>Niklas</title>
       <link>https://schubrake.de/client/niklas/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://schubrake.de/client/niklas/</guid>
-      <description>Visitenkarten aus holz Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet neque minima dolor facilis nisi. Vero voluptate obcaecati illo veritatis earum quae porro, asperiores, exercitationem eveniet quos, dolores dolore. Est, blanditiis.</description>
+      <description>Niklas ist Tischler und brauchte für die Frage wie man ihn denn erreichen kann eine Möglichkeit jemandem mal eben ne Visitenkarte in die Hand zu drücken. Was wäre besser für einen Tischler als Visitenkarten aus Holz?</description>
     </item>
     
     <item>
@@ -25,7 +37,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://schubrake.de/client/playground/</guid>
-      <description>Playground Coffee Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet neque minima dolor facilis nisi. Vero voluptate obcaecati illo veritatis earum quae porro, asperiores, exercitationem eveniet quos, dolores dolore. Est, blanditiis.</description>
+      <description>Für Playground habe ich ein paar Sticker zusammengeschraubt. Die Illustration gab es schon und kommt von Maja Kristin</description>
     </item>
     
   </channel>

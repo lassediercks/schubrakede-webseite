@@ -1,33 +1,19 @@
 {{ partial "header.html" . }}
-    <header>
-      <div></div>
-      <img class="rakede"src="/img/rakede.svg" alt="">
-      <div class="logo">
-        <h1 class="logo_word">Schubrakede</h1>
-        <span class="logo_claim">Agentur mit Wumms</span>
-        <div class="header-buttons">
-          <a href="skype:live:skype_26846?call" class="sr-button sr-button--skype">Bei Skype anklingeln</a>
-          <a href="https://wa.me/+4915734376122" class="sr-button sr-button--whatsapp">Whatsapp texten</a>
-          <a href="mailto:cockpit@lassediercks.de" class="sr-button sr-button--email">E-Mail schreiben</a>
-          <a href="tel:004915734376122" class="sr-button sr-button--call">Anrufen</a>
-        </div>
-      </div>
-          <div class="social">
-            <a class="sr-social-link" href="https://www.youtube.com/channel/UCNC51NaCsGSmVAyvHu0TpPQ?view_as=subscriber"><img
-              class="sr-icon" src="/img/youtube.svg" alt=""></a>
-      <a class="sr-social-link" href="https://instagram.com/schubrakede"><img class="sr-icon" src="/img/instagram.svg"
-              alt=""></a>
-      <a class="sr-social-link" href="https://anchor.fm/schubrakede"><img class="sr-icon" src="/img/microphone.svg"
-              alt=""></a>
-      <a class="sr-social-link" href="https://twitter.com/schubrakede"><img
-          class="sr-icon" src="/img/twitter.svg" alt=""></a>
-      <a class="sr-social-link" href="https://facebook.com/schubrakede"><img
-          class="sr-icon" src="/img/facebook.svg" alt=""></a>
-          </div>
-      
-    </header>
+  
     <main>
       {{ .Content }}
+
+      <section>
+      <h2>Kunden</h2>
+      {{ range .Site.RegularPages}}
+  
+        {{ if eq .Type  "client" }}
+          <a href="{{ .Permalink }}">{{.Title}}</a>
+        {{ end }}
+          
+      {{ end }}
+      </section>
     </main>
+
 
 {{ partial "footer.html" . }}

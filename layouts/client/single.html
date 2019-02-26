@@ -1,5 +1,12 @@
 {{ partial "header.html" . }}
 
+
+<div class="single-client_header">
+<h1 class="single-client_header-title">{{ .Page.Description }}</h1>
+Kunde: {{ .Page.Title }}
+</div>
+<div class="single-client">
 {{ .Content }}
+</div>
 
 {{ partial "footer.html" . }}
