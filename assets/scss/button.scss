@@ -1,0 +1,73 @@
+/* Button */
+
+.sr-button {
+  background-image: url('/img/bg/noise.png'),
+    linear-gradient(164deg, rgba(255, 255, 255, 0.1) 49%, transparent 50%);
+  background-color: var(--sr-orange);
+  color: white;
+  display: inline-flex;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  min-width: 195px;
+  padding: 0 calc(4px * 6);
+  border-radius: 6px;
+  text-decoration: none;
+  margin: 8px;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.37);
+  transition: transform 120ms ease-out;
+}
+
+.sr-button:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+
+.sr-button--twitch {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+  background-color: var(--twitch-purple);
+}
+
+.sr-button--skype {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+  background-color: var(--skype-blue);
+}
+
+.sr-button--appear {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+
+  background-color: var(--appearIn-rose);
+}
+
+.sr-button--whatsapp {
+  background-color: var(--whatsapp-green);
+}
+
+@media (min-width: 601px) {
+  .sr-button--call {
+    display: none;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .sr-button--email {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .sr-button--whatsapp {
+    display: inline-flex;
+  }
+  .sr-button--email,
+  .sr-button--skype {
+    display: none;
+  }
+}
+
+.sr-button--patreon {
+  color: white;
+  background: var(--patreon-orange);
+}
