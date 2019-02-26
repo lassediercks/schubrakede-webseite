@@ -1,13 +1,11 @@
 {{ $original := .Page.Resources.GetMatch (printf "*%s*" (.Get 0)) }}
-{{ $image := ($original.Resize "1200x") }}
-{{ $image300 := ($original.Resize "300x") }}
-{{ $image600 := ($original.Resize "600x") }}
-{{ $image900 := ($original.Resize "900x") }}
+{{ $image := ($original.Resize "768x q85") }}
+{{ $image300 := ($original.Resize "300x q90") }}
+{{ $image600 := ($original.Resize "600x q90") }}
 
 
 <picture>
     <source srcset="{{ $image300.RelPermalink }}" media="(max-width: 300px)">
     <source srcset="{{ $image600.RelPermalink }}" media="(max-width: 600px)">
-    <source srcset="{{ $image900.RelPermalink }}" media="(max-width: 900px)">
     <img src="{{ $image.RelPermalink }}">
 </picture>
